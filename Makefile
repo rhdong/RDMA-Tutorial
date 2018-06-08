@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-Wall -Werror -O2
 INCLUDES=
 LDFLAGS=
-LIBS=-pthread -lrdmacm
+LIBS=-libverbs -pthread -lrdmacm
 
 SRCS=main.c client.c config.c ib.c server.c setup_ib.c sock.c
 OBJS=$(SRCS:.c=.o)
